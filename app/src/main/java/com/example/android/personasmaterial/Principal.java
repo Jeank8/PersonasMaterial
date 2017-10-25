@@ -31,7 +31,7 @@ public class Principal extends AppCompatActivity {
 
         listado = (RecyclerView)findViewById(R.id.lstPersonas);
         res = this.getResources();
-        personas = new ArrayList<>();
+        personas = Datos.obtenerPersonas();
 
         adapter = new AdaptadorPersona(this,personas);
         llm = new LinearLayoutManager(this);
